@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{biblatex}
+\addbibresource{report.bib}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=cyan,
+}
+\title{\textbf{Cricket Sweeper Report}}
+\author{Sri Shraddha Singirikonda \\ 22B0905}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\clearpage
+\section{Introduction}
+     Cricket sweeper is an interactive web-based game that offers an engaging and challenging experience for players. The game revolves around a grid-based playing field where players accumulate points by revealing blocks and strategically avoiding fielders. The objective is to maximize points while navigating the grid and competing against other players.
+\section{Description}
+    Basically, this is a luck based game! .This game can be played by multiple players. Select the number of players and enter grid size by clicking start game button.Points will be awarded to players randomly ranging from 1 to 6 .Game will be by played by players alternatively .Fielders are randomly placed in 11 blocks.Game will complete when player clicks on block containing fielder.And 5 powerUps are hidden in 5 blocks randomly.This game includes powerUps also. 
+\section{Customisation}    
+\begin{itemize}
+    \item \textbf{Number of Players:} Select number of players ranging from 1 to 4
+    \item \textbf{Grid Size:} After clicking Start game button enter grid size ranging from 5-10
+    \item \textbf{Points:}Points are won ranging from 1 to 6.Points won by player are displayed on block and background colour of block changes based on current player(eg:If current number=1 background colour changes to yellow)
+    \item \textbf{Scores:}Scores of all players will be displayed below grid.
+    \item \textbf{PowerUps:}When player clicks on block containing powerup player gets another chance to play.
+    \item \textbf{Power Up}:When player clicks on reveal fielders button it will show blocks containing fielders for one second and can be used only once.
+    
+\end{itemize}
+\section{Implementation}
+    My code contains sweeper.html,styles.css ,script.js and some image files\\
+    sweeper.html displays a web page containing number of players button ,start game button,reveal fielders and grid.And styles.css contains how page is styled\\
+    script.js contains information how game will be executed.Start game function creates grid of grid size given as input.Reveal block function popups a box displaying scores of all players when player clicks on block containing fielder, popup a box saying that player won another chance if block contain powerup otherwise reveals points won by player.
+\section{Compilation}
+    Run the code using option open with live server
+\nocite{*}    
+\printbibliography 
+\end{document}

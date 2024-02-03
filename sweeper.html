@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket Grid Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="background-image: url('CricketBG.jpg');background-size: cover;">
+    <h1>Cricket Grid Game</h1>
+    <div class="col-md-12">
+        <div class="col-md-6 btn">
+            <button onclick="startGame()" class="button">Start Game</button>
+            <button onclick="removeAllFielders()" id="disableField" class="button ">Reveal Fielders</button>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-3">
+                <div id="playerOptions"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="btn">
+                    <button id="playerButton" class="button">Select No of Players</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <br />
+    <div class="grid-container">
+        <!-- Grid will be dynamically generated here -->
+    </div>
+    <h2 id="score"></h2>
+    <div id="player1-score" class="score"></div>
+    <div id="player2-score" class="score"></div>
+    <div id="player3-score" class="score"></div>
+    <div id="player4-score" class="score"></div>
+    <div id="popup-container">
+        <div class="popup">
+            <p id="popup-message"></p>
+            <div class="popup-button2">
+                <button id="popup-button">OK</button>
+            </div>
+        </div>
+    </div>
+    <div id="popup-container">
+        <div class="popup">
+            <p id="popup-message"></p>
+            <p id="popup-scores"></p>
+            <div class="popup-button2">
+                <button id="popup-button">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
